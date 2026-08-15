@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars">
+    <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+    <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+    <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+    <span>✦</span><span>✧</span><span>♡</span>
+</div>
+
+<a href="reasons.html" class="mini-heart-link">♥</a>
+<a href="garden.html" class="mini-garden-link">🌱</a>
+
+        
+    <section class="page">
+        <div class="eyebrow">Memories</div>
+        <h1 class="page-title">Our Memories <span>♥</span></h1>
+        <p class="page-subtitle">Some of my favorite moments with you.</p>
+
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterGallery('all', this)">All</button>
+            <button class="filter-tab" onclick="filterGallery('dates', this)">Dates</button>
+            <button class="filter-tab" onclick="filterGallery('trips', this)">Trips</button>
+            <button class="filter-tab" onclick="filterGallery('random', this)">Random</button>
+            <button class="filter-tab" onclick="filterGallery('cute', this)">Cute</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="dates"><img src="images/memory-1.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="cute"><img src="images/memory-2.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="dates"><img src="images/memory-3.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="trips"><img src="images/memory-4.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="random"><img src="images/memory-5.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="dates"><img src="images/memory-6.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="cute"><img src="images/memory-7.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="trips"><img src="images/memory-8.jpeg" alt=""></div>
+            <div class="gallery-item" data-category="random"><img src="images/memory-9.jpeg" alt=""></div>
+        </div>
+    </section>
+
+    <div class="page-nav">
+        <a href="story.html">← Back</a>
+        <a href="wrapped.html">Next →</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Wish For You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars">
+        <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+        <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+        <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+        <span>✦</span><span>✧</span><span>♡</span>
+    </div>
+
+    <a href="reasons.html" class="mini-heart-link">♥</a>
+    <a href="garden.html" class="mini-garden-link">🌱</a>
+    
+    <div class="fireworks-layer" id="fireworksLayer"></div>
+    <div style="position:fixed; width:1px; height:1px; overflow:hidden; opacity:0; pointer-events:none;">
+    <div id="ytPlayer"></div>
+    </div>
+
+    <section class="page">
+        <div class="eyebrow">A Wish For You</div>
+        <h1 class="page-title">Open When <span>You're Ready</span></h1>
+        <p class="page-subtitle">There's something written inside, just for you.</p>
+
+        <div class="envelope-scene">
+            <div class="envelope" id="envelopeBox" onclick="openEnvelope()">
+                <div class="envelope-back"></div>
+                <div class="letter-paper">♥</div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+            </div>
+            <p class="envelope-hint">Tap the envelope to open</p>
+        </div>
+    </section>
+
+    <div class="letter-reveal" id="letterReveal">
+        <div class="letter-reveal-card">
+            <button class="modal-close" onclick="closeLetterReveal()">✕</button>
+            <div class="letter-reveal-text">
+    <p>Happy birthday to my birthday girl ❤️ Today is your special day, and I really hope you know just how much you mean to me. I'm genuinely grateful that life somehow brought us together and gave me the chance to know you this closely. Looking back at everything we've been through, from the beginning when we were still getting to know each other until where we are now, there are so many memories that I'm thankful for. You've become someone who is a really important part of my life, and having you around has brought me so many moments that I'll always remember. I hope today you get to feel all the love and appreciation that you deserve. You deserve to be celebrated, to be spoiled a little, to smile a lot, and most importantly, to feel happy. I hope you never forget that you are someone worth loving, appreciating, and taking care of. ❤️</p>
+
+    <p>I know that being together isn't always going to be perfect, and I know we've had our misunderstandings, arguments, overthinking, and moments where we didn't understand each other the way we wanted to. There are probably things I could have done better, and there are things we both have had to learn along the way. But despite all of that, I'm still grateful for you and for everything we've experienced together. I appreciate all the little things you do, even the things you might think are insignificant. I appreciate the way you care, the way you remember things, the way you get excited about certain things, the way you express your feelings, and even the little habits that make you, you. Sometimes I may not say it enough or show it in the exact way you expect, but that doesn't mean I don't notice or appreciate them. I'm still learning how to be a better person and a better partner, and I hope as time goes on, I can continue learning how to understand you better, communicate better, and make you feel appreciated. Thank you for staying, for sharing your time with me, for trusting me with parts of yourself, and for allowing me to be part of your life. I genuinely treasure the memories we've made together, whether they were big moments or just the random little moments that probably wouldn't mean much to anyone else but somehow mean a lot to me.</p>
+
+    <p>On your birthday, more than anything, I hope this new year of your life is kinder to you. I hope you achieve the things you've been working towards, that you meet more good people, experience more happiness, and have more reasons to be proud of yourself. I hope you learn to appreciate yourself as much as the people around you appreciate you, because you deserve that too. Don't let the difficult days convince you that you're not doing enough or that you're not enough, because you're still growing and figuring things out just like everyone else. I hope you continue chasing the things that make you happy and never lose the parts of yourself that make you special. And as for us, I hope we continue growing together, learning from each other, laughing over stupid things, making memories, and being there for each other through whatever comes next. I can't promise that everything will always be perfect, but I can say that I'm grateful for what we have and for every moment I get to spend with you. So today, forget about all the worries for a while and just enjoy being the birthday girl. You deserve a beautiful birthday, a beautiful year ahead, and so many beautiful moments to come. Happy birthday, baby. ❤️ I hope you know that you are loved, appreciated, and incredibly special to me. Here's to another year of you, and hopefully many more memories for us to look back on together. ❤️</p>
+</div>
+            <div class="letter-signature">— Yours, always</div>
+        </div>
+    </div>
+
+    <div class="page-nav">
+        <a href="index.html">← Back</a>
+        <span class="spacer">.</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

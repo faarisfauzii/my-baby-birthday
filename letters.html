@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open When...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<<div class="stars">
+    <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+    <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+    <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+    <span>✦</span><span>✧</span><span>♡</span>
+</div>
+
+<a href="reasons.html" class="mini-heart-link">♥</a>
+<a href="garden.html" class="mini-garden-link">🌱</a>
+
+
+    <section class="page">
+        <div class="eyebrow">Open When</div>
+        <h1 class="page-title">Open When... 💌</h1>
+        <p class="page-subtitle">Letters for every moment you need.</p>
+
+        <div class="envelope-grid">
+            <div class="envelope env-1" onclick="openLetter('miss')">You miss me<span class="heart">♥</span></div>
+            <div class="envelope env-2" onclick="openLetter('badday')">You're having a bad day<span class="heart">♥</span></div>
+            <div class="envelope env-3" onclick="openLetter('sleep')">You can't sleep<span class="heart">♥</span></div>
+            <div class="envelope env-4" onclick="openLetter('mad')">You're mad at me<span class="heart">♥</span></div>
+            <div class="envelope env-5" onclick="openLetter('reassurance')">You need reassurance<span class="heart">♥</span></div>
+            <div class="envelope env-7" onclick="openLetter('smile')">You want to smile<span class="heart">♥</span></div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="letterModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeLetter()">✕</button>
+            <div class="modal-title" id="modalTitle"></div>
+            <div class="modal-text" id="modalText"></div>
+        </div>
+    </div>
+
+    <div class="page-nav">
+        <a href="wrapped.html">← Back</a>
+        <a href="future.html">Next →</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

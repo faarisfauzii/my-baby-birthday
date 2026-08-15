@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars">
+        <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+        <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+        <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+        <span>✦</span><span>✧</span><span>♡</span>
+    </div>
+
+    <a href="reasons.html" class="mini-heart-link">♥</a>
+    <a href="garden.html" class="mini-garden-link">🌱</a>
+
+    <section class="page">
+        <div class="eyebrow">Our Garden</div>
+        <h1 class="page-title">Plant Something <span>Pretty</span></h1>
+        <p class="page-subtitle">Just like us — it grows a little more each time you show up for it.</p>
+
+        <div class="pot-area">
+            <div class="flower-picker" id="flowerPicker">
+                <div class="flower-option" onclick="selectFlower('pink')">
+                    <span class="emoji">🌸</span>
+                    <span class="name">Pink Blossom</span>
+                </div>
+                <div class="flower-option" onclick="selectFlower('yellow')">
+                    <span class="emoji">🌻</span>
+                    <span class="name">Yellow Sunflower</span>
+                </div>
+            </div>
+
+            <div class="pot-display" id="potDisplay">🪴</div>
+
+            <div class="growth-progress"><div class="growth-progress-bar" id="growthProgressBar"></div></div>
+            <p class="growth-label" id="growthLabel">Pick a flower to start planting</p>
+
+            <button id="waterBtn" onclick="waterFlower()" style="display:none;">Water it 💧</button>
+            <button id="addToGardenBtn" onclick="addToGarden()" style="display:none;">Add to garden 🌷</button>
+
+            <p class="water-note" id="waterNote" style="display:none;">Water it once every few hours to help it grow.</p>
+        </div>
+
+        <div class="garden-section">
+            <p class="section-label">Your Garden</p>
+            <div class="garden-grid" id="gardenGrid"></div>
+            <p class="garden-empty" id="gardenEmpty">No flowers yet — grow your first one above 🌱</p>
+        </div>
+    </section>
+
+    <div class="page-nav">
+    <a href="index.html" id="backLink">← Back</a>
+    <span class="spacer">.</span>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

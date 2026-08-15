@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars">
+    <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+    <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+    <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+    <span>✦</span><span>✧</span><span>♡</span>
+</div>
+
+<a href="garden.html" class="mini-garden-link">🌱</a>
+
+    
+    <section class="page">
+        <div class="eyebrow">For You</div>
+        <h1 class="page-title">A Little Something <span>For You</span></h1>
+        <p class="page-subtitle">Whenever you need it — this is here.</p>
+
+        <div class="reminder-section">
+            <p class="section-label">Tap for a little reminder</p>
+            <div class="reminder-card" id="complimentCard">Tap the heart to begin ♥</div>
+            <button onclick="newCompliment()">Tap again <span>♥</span></button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="jar-section">
+            <p class="section-label">Reasons I Love You</p>
+            <div class="jar-visual">🫙</div>
+            <div class="jar-progress"><div class="jar-progress-bar" id="jarProgressBar"></div></div>
+            <p class="jar-count" id="jarCount">0 of 20 notes pulled</p>
+            <div class="reminder-card" id="jarNote">Pull a note to reveal a reason ♥</div>
+            <button onclick="pullNote()">Pull a note <span>🎀</span></button>
+            <button class="btn-secondary" onclick="resetJar()">Reset jar</button>
+        </div>
+    </section>
+
+    <div class="page-nav">
+    <a href="index.html" id="backLink">← Back</a>
+    <span class="spacer">.</span>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

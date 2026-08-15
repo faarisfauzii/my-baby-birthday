@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wrapped</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars">
+    <span>✦</span><span>✧</span><span>✦</span><span>♡</span><span>✧</span><span>✦</span>
+    <span class="petal">🌸</span><span class="petal">🌼</span><span class="petal">🌸</span>
+    <span class="petal">🌼</span><span class="petal">🌸</span><span class="petal">🌼</span>
+    <span>✦</span><span>✧</span><span>♡</span>
+</div>
+
+<a href="reasons.html" class="mini-heart-link">♥</a>
+<a href="garden.html" class="mini-garden-link">🌱</a>
+
+        
+    <section class="page">
+        <div class="eyebrow">Wrapped</div>
+        <h1 class="page-title">♥ Our 2026 Wrapped ♥</h1>
+        <p class="page-subtitle">A summary of our year together.</p>
+
+        <div style="display:flex; align-items:center; gap:16px;">
+            <button class="carousel-arrow" onclick="prevWrapped()">‹</button>
+            <div class="stats-row" id="statsRow"></div>
+            <button class="carousel-arrow" onclick="nextWrapped()">›</button>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+
+        <p class="wrapped-question">Best thing that happened this year?</p>
+        <p class="wrapped-answer">US ♥</p>
+    </section>
+
+    <div class="page-nav">
+        <a href="memories.html">← Back</a>
+        <a href="letters.html">Next →</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
