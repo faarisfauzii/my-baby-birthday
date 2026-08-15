@@ -551,14 +551,15 @@ function openEnvelope() {
     const envelope = document.getElementById("envelopeBox");
     if (!envelope || envelope.classList.contains("open")) return;
 
+    playSong(); // moved to the very top — must run in direct response to the tap
+
     envelope.classList.add("open");
 
     setTimeout(() => {
         document.getElementById("letterReveal").classList.add("open");
-        launchFireworks();
+        startFireworks();
     }, 1500);
 }
-
 function closeLetterReveal() {
     document.getElementById("letterReveal").classList.remove("open");
 
