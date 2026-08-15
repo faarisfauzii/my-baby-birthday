@@ -299,11 +299,98 @@ footer {
     display: block;
 }
 
-@media (max-width: 700px) {
-    .timeline::before { left: 20px; }
-    .timeline-item, .timeline-item:nth-child(even) { width: 100%; left: 0; text-align: left; padding-left: 50px; }
+/* ------------------------- MOBILE (general, ≤600px) ------------------------- */
+@media (max-width: 600px) {
+    h1 { font-size: 42px; }
+    .subtitle { font-size: 13px; }
+    .photo-frame { width: 145px; height: 180px; }
+
+    .page { padding: 50px 16px 110px; }
+    .page-title { font-size: 32px; }
+    .page-subtitle { font-size: 13px; padding: 0 10px; }
+
+    .mini-heart-link { top: 16px; right: 16px; font-size: 18px; }
+    .mini-garden-link { top: 16px; right: 50px; font-size: 18px; }
+
+    .page-nav { padding: 14px 16px; }
+    .page-nav a { font-size: 12px; padding: 8px 14px; }
+
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
+    .stats-row { flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .stat-card { width: 120px; padding: 18px 14px; }
+    .stat-value { font-size: 22px; }
+    .carousel-arrow { width: 30px; height: 30px; font-size: 14px; }
+
+    .envelope-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .envelope { padding: 20px 12px; font-size: 12px; }
+
+    .modal-box, .letter-reveal-card { padding: 26px 20px; max-width: 92vw; }
+
+    .letter-card { padding: 30px 24px; max-width: 92vw; }
+    .letter-card h1 { font-size: 22px; }
+    .letter-card p { font-size: 13px; }
+
+    .bucket-list { max-width: 100%; }
+    .bucket-item { padding: 12px 14px; }
+
+    .flower-picker { gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .flower-option { padding: 14px 18px; }
+
+    .garden-grid { gap: 10px; }
+    .garden-flower { width: 68px; padding: 10px; }
+
+    .terminal-box { padding: 16px; font-size: 12px; }
+    .pixel-heart { grid-template-columns: repeat(14, 6px); grid-template-rows: repeat(12, 6px); }
+    .pixel-heart div { width: 6px; height: 6px; }
+
+    .reminder-card { padding: 22px 18px; font-size: 15px; max-width: 100%; }
+    .jar-progress { width: 160px; }
+
+    .envelope-scene { margin-top: 20px; }
+    .envelope { transform: scale(0.8); }
+}
+
+/* ------------------------- SMALL PHONES (≤400px) ------------------------- */
+@media (max-width: 400px) {
+    h1 { font-size: 34px; }
+    .page-title { font-size: 26px; }
+
+    .gallery-grid { gap: 8px; }
+    .filter-tabs { gap: 6px; }
+    .filter-tab { padding: 6px 12px; font-size: 11px; }
+
+    .stat-card { width: 100px; padding: 14px 10px; }
+    .stat-label { font-size: 11px; }
+    .stat-value { font-size: 18px; }
+
+    .envelope-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .flower-option .emoji { font-size: 24px; }
+    .pot-display { font-size: 70px; }
+    .growth-progress { width: 170px; }
+
+    .envelope { transform: scale(0.68); }
+    .envelope-scene { margin-top: 10px; }
+
+    .terminal-box { font-size: 11px; padding: 14px; }
+    .pixel-heart { grid-template-columns: repeat(14, 5px); grid-template-rows: repeat(12, 5px); }
+    .pixel-heart div { width: 5px; height: 5px; }
+
+    .mini-heart-link { top: 12px; right: 12px; font-size: 16px; }
+    .mini-garden-link { top: 12px; right: 40px; font-size: 16px; }
+}
+
+/* ------------------------- TABLET (601px–900px) ------------------------- */
+@media (min-width: 601px) and (max-width: 900px) {
+    .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+    .envelope-grid { grid-template-columns: repeat(3, 1fr); }
+    .timeline-item, .timeline-item:nth-child(even) {
+        width: 100%; left: 0; text-align: left; padding-left: 55px;
+    }
+    .timeline::before { left: 22px; }
     .timeline-item:nth-child(odd) .timeline-dot,
-    .timeline-item:nth-child(even) .timeline-dot { left: 13px; }
+    .timeline-item:nth-child(even) .timeline-dot { left: 15px; }
 }
 
 /* ------------------------- GALLERY (memories.html) ------------------------- */
